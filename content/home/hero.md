@@ -10,7 +10,6 @@ cta:
   label: Get Started
   icon_pack: fas
   icon: download
-widget_id: page-icon
 headless: true
 weight: 10
 title: Project Docs Template
@@ -19,15 +18,14 @@ cta_alt:
   label: View Documentation
 design:
   background:
-    gradient_start: "#4bb4e3"
-    gradient_end: "#2b94c3"
-    text_color_light: true
-    image: unatomic.svg
-hero_media: book.svg
+    gradient_angle: 0
+    gradient_start: 'rgb(224,223,255)'
+    gradient_end: 'rgb(153,238,255)'
+    text_color_light: false
+hero_media: unatomic.svg
 ---
+<br>
 
-Published with the [Wowchemy Website Builder](https://wowchemy.com/) for Hugo.
+Shorthand for 'equidem' with [definitions](http://www.perseus.tufts.edu/hopper/text?doc=equidem&fromdoc=Perseus%3Atext%3A1999.04.0060) like 'truly' or 'indeed', we are building a place to share resources about modern software development. In sharing, we hope that it will deepen our own understanding and hone these practices. 
 
-Write something interesting about your project here.
-
-<a class="github-button" href="https://github.com/wowchemy/wowchemy-hugo-modules" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star Wowchemy Website Builder for Hugo">Star Wowchemy Website Builder for Hugo</a><br><a class="github-button" href="https://github.com/wowchemy/starter-hugo-project-documentation" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star the Project Docs template">Star the Project Docs template</a><script async defer src="https://buttons.github.io/buttons.js"></script>
+Happy that you are here :smile:.
