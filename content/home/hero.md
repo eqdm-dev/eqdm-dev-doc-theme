@@ -7,15 +7,11 @@ cta_note:
 widget: hero
 cta:
   url: docs/
-  label: Get Started
+  label: View Documentation
   icon_pack: fas
-  icon: download
+  icon: infinity
 headless: true
 weight: 10
-title: Project Docs Template
-cta_alt:
-  url: docs/
-  label: View Documentation
 design:
   background:
     gradient_angle: 0
