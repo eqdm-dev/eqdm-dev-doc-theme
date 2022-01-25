@@ -52,17 +52,17 @@ gui.recentrepo=C:/Users/Rick/Documents/RUVW
 ```
 
 ## Lab
-Q. You told Git your name and email, but where does Git save that information? See if you can locate where this is.
+Q. You told Git your name and email, but where does Git save that information? See if you can locate where this is.  
 A: It’s at the root of your `/home` folder; file `.gitconfig`.
 
-Q. Git is known as the _stupid content tracker_. What git help page says this?
+Q. Git is known as the _stupid content tracker_. What git help page says this?  
 A: It’s the first item of the `man page`.
 
-Q. What is the Git command that forward-ports local commits?
+Q. What is the Git command that forward-ports local commits?  
 A: `git-rebase - Forward-port local commits to the updated upstream head`
 
-Q. What does the abbreviation DAG stand for, in the context of Git?
+Q. What does the abbreviation DAG stand for, in the context of Git?  
 A: DAG is the abbreviation for **Directed Acyclic Graph**. It’s how Git tracks files within any given branch. It can be “viewed” like a network graph or a left-to-right branched structure.
 
-Q. Does your installation come with a Git tutorial help file?
+Q. Does your installation come with a Git tutorial help file?  
 A: Yes. `man git` (?)
