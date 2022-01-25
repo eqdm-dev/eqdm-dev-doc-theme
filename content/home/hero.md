@@ -2,14 +2,12 @@
 cta_note:
   label: >-
     <span class="js-github-release" data-repo="wowchemy/wowchemy-hugo-modules">
-      Show your product version here:<!-- Automatically filled based on data-repo value -->
+      <style font-size="xx-small">wowchemy release <!-- Automatically filled based on data-repo value --></style>
     </span>
 widget: hero
 cta:
   url: docs/
-  label: View Documentation
-  icon_pack: fas
-  icon: infinity
+  label: View Projects
 headless: true
 weight: 10
 design:
