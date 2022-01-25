@@ -1,5 +1,5 @@
 ---
-title: Docs
+title: Project Docs
 type: book  # Do not modify.
 toc: false
 ---

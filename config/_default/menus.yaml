@@ -7,6 +7,9 @@ main:
   - name: Home
     url: /
     weight: 10
-  - name: Projects
+  - name: Project Docs
     url: projects/
     weight: 20
+  - name: Widget Page
+    url: landing/
+    weight: 30
