@@ -1,10 +1,9 @@
 ---
 cta_note:
   label: >-
-    <span><style font-size="xx-small">wowchemy release 
-    <span class="js-github-release" data-repo="wowchemy/wowchemy-hugo-modules">
-      <!-- Automatically filled based on data-repo value -->
-    </span></style></span>
+    <span class="js-github-release" data-repo="wowchemy/wowchemy-hugo-modules" style="font-size:xx-small">
+      wowchemy release <!-- Automatically filled based on data-repo value -->
+    </span>
 widget: hero
 cta:
   url: projects/
@@ -19,7 +18,8 @@ design:
     text_color_light: false
 hero_media: unatomic.svg
 ---
-<br />
+<br>
+
 Shorthand for 'equidem' with [definitions](http://www.perseus.tufts.edu/hopper/text?doc=equidem&fromdoc=Perseus%3Atext%3A1999.04.0060) like 'truly' or 'indeed', we are building a place to share resources about modern software development. In sharing, we hope that it will deepen our own understanding and hone these practices. 
 
 Happy that you are here :smile:.

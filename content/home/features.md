@@ -3,18 +3,23 @@ widget: featurette
 headless: true
 weight: 20
 title: Features
-subtitle: Document _anything_ ✨
+subtitle: 🌟 Get equipped with 🌟
 feature:
-  - icon: book-open
+  - icon: code
     icon_pack: fas
-    name: Project Documentation
-    description: For users
-  - icon: question
+    name: Code
+    description: null
+  - icon: project-diagram
     icon_pack: fas
-    name: Knowledge Base
-    description: For teams
+    name: Slides
+    description: null
+  - icon: tools
+    icon_pack: fas
+    name: Tools
+    description: null
   - icon: list-alt
     icon_pack: fas
-    name: Personal Notebook
-    description: For yourself
+    name: Project Notes
+    description: null
+widget_id: pathfinder
 ---
