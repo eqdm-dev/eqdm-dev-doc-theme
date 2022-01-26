@@ -22,7 +22,7 @@ Here’s where I diverged from the lesson plan and treated my _README_ file like
 
 Making small edits and several commits, I was able to see the circumstances like:
  
-!["diagram of a git flow"](/git-mol/day2-02.png "The dev cycle: Working area, Staging area , Commit history")
+![Diagram of a git flow](/git-mol/day2-02.png "The dev cycle: Working area, Staging area , Commit history")
 
 From right to left, I have:
 
@@ -30,7 +30,7 @@ From right to left, I have:
 2. I have made edits to same file and added it (then I enhanced the file-as-script and added, but not committed, the change)
 3. I have made more edits to the file (finally, I removed the single variable echo as I have done more work on the file-as-script)
 
-!["diagram of a git status"](/git-mol/day2-03.png "`git diff` or `git diff —staged` can show the facet of the dev cycle")
+![Diagram of a git status](/git-mol/day2-03.png "`git diff` or `git diff —staged` can show the facet of the dev cycle")
 
 ## Commands of Note
 ```
@@ -44,7 +44,7 @@ git log --shortstat --oneline
 
 ##  Expressing my Skillselves
 
-![terminal window with git dialog](/media/git-mol-day2-01.png ".../.git/rebase-merge/git-rebase-todo")
+{{< figure src="/media/git-mol-day2-01.png" caption="…/.git/rebase-merge/git-rebase-todo" numbered="false" >}}
 _After doing multiple commits, it would seem that doing something unconventional like adding the execute bit to a text file and adding script code should support and inform the commit history._
 
 ☝️Using `git rebase -i HEAD~N`  (where N is positional number), I was able to tag the errant line with the `reword` command and change the message in an interactive session. Nice!
