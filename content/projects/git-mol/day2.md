@@ -46,7 +46,7 @@ git log --shortstat --oneline
 
 ##  Expressing my Skillselves
 
-![](./day2-01.png)
+![](git-mol-day2-01.png)
 _After doing multiple commits, it would seem that doing something unconventional like adding the execute bit to a text file and adding script code should support and inform the commit history._
 
 ☝️Using `git rebase -i HEAD~N`  (where N is positional number), I was able to tag the errant line with the `reword` command and change the message in an interactive session. Nice!
