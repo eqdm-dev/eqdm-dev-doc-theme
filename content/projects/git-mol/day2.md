@@ -44,7 +44,7 @@ git log --shortstat --oneline
 
 ##  Expressing my Skillselves
 
-{{< figure src="/media/git-mol-day2-01.png" caption="…/.git/rebase-merge/git-rebase-todo" numbered="false" >}}
+{{< figure src="../../../assets/media/git-mol-day2-01.png" caption="Terminal instructions at .git/rebase-merge/git-rebase-todo" numbered="false" >}}
 _After doing multiple commits, it would seem that doing something unconventional like adding the execute bit to a text file and adding script code should support and inform the commit history._
 
 ☝️Using `git rebase -i HEAD~N`  (where N is positional number), I was able to tag the errant line with the `reword` command and change the message in an interactive session. Nice!
