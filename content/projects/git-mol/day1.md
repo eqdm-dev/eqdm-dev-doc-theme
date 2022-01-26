@@ -42,18 +42,18 @@ color.interactive=true
 pack.packsizelimit=2g
 help.format=html
 http.sslcainfo=/bin/curl-ca-bundle.crt
-sendemail.smtpserver=/bin/msmtp.exe
+sendemail.smtpserver=/bin/salmon
 diff.astextplain.textconv=astextplain
 rebase.autosquash=true
-user.name=Rick Umali
-user.email=rickumali@gmail.com
-gui.recentrepo=C:/Users/Rick/Documents/gitbook
-gui.recentrepo=C:/Users/Rick/Documents/RUVW
+user.name=Fname Lname
+user.email=Fname.Lname@example.net
+gui.recentrepo=/home/fname/Documents/gitbook
+gui.recentrepo=/home/fname/Documents/spellbook
 ```
 
 ## Lab
 Q. You told Git your name and email, but where does Git save that information? See if you can locate where this is.  
-A: It’s at the root of your `/home` folder; file `.gitconfig`.
+A: It’s at the root of your `~` (i.e. home) folder; file `.gitconfig`.
 
 Q. Git is known as the _stupid content tracker_. What git help page says this?  
 A: It’s the first item of the `man page`.

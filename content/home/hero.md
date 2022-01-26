@@ -1,9 +1,9 @@
 ---
-cta_note:
-  label: >-
-    <span class="js-github-release" data-repo="wowchemy/wowchemy-hugo-modules" style="font-size:xx-small">
-      wowchemy release <!-- Automatically filled based on data-repo value -->
-    </span>
+# cta_note:
+#   label: >-
+#     <span class="js-github-release" data-repo="wowchemy/wowchemy-hugo-modules" style="font-size:xx-small">
+#       wowchemy release <!-- Automatically filled based on data-repo value -->
+#     </span>
 widget: hero
 cta:
   url: projects/
@@ -15,10 +15,11 @@ design:
     gradient_angle: 0
     gradient_start: 'rgba(224,223,255,1)'
     gradient_end: 'rgba(153,238,255,1)'
-    image_size: cover
+    # image_size: cover
+    text_color_light: false
   spacing:
       # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["15px", "0", "10px", "0"]
+      padding: ["15px", "0", "10px", "0"]    
 hero_media: unatomic.svg
 ---
 
