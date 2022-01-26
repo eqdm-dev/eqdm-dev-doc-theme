@@ -7,32 +7,34 @@ date: "2021-03-23T00:00:00+01:00"
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 2
 ---
-## Git init
+## Doing init
 Using a freshly `init` repo, we are going to do a bunch of small edits to watch how Git conveys information back to the local repo owner.
 
 Create a new repo in a new empty directory -> `git init`
-Create some artifact for git ->
-	1. `touch README.md`
-	2. `git add README.md && git commit -m "Add empty document"`
-	3. `echo "no longer an empty document" > README.md`
-	4. `git commit -am "Second commit" # (szf) Add and commit message on one-line`
+Create some artifact for git:
+
+1. `touch README.md`
+2. `git add README.md && git commit -m "Add empty document"`
+3. `echo "no longer an empty document" > README.md`
+4. `git commit -am "Second commit" # (szf) Add and commit message on one-line`
 
 Here’s where I diverged from the lesson plan and treated my _README_ file like it was a bash script.
 
 Making small edits and several commits, I was able to see the circumstances like:
  
-![](Screen%20Shot%202021-03-23%20at%202.33.32%20PM.png)
+![](./Screen%20Shot%202021-03-23%20at%202.33.32%20PM.png)
 _Three states of the dev cycle: Working area; Staging area; Commit history_
 
 From right to left, I have:
-	1. Created my README file, added, and committed it (in this case, I had previously marked the file executable, and added a variable to the file with echo of the same variables value)
-	2. I have made edits to same file and added it (then I enhanced the file-as-script and added, but not committed, the change)
-	3. I have made more edits to the file (finally, I removed the single variable echo as I have done more work on the file-as-script)
 
-![](Screen%20Shot%202021-03-23%20at%202.33.39%20PM.png)
+1. Created my README file, added, and committed it (in this case, I had previously marked the file executable, and added a variable to the file with echo of the same variables value)
+2. I have made edits to same file and added it (then I enhanced the file-as-script and added, but not committed, the change)
+3. I have made more edits to the file (finally, I removed the single variable echo as I have done more work on the file-as-script)
+
+![](./Screen%20Shot%202021-03-23%20at%202.33.39%20PM.png)
 /Between the Working; Stage; Commit history: `git diff` | `git diff —staged` can show the facet of that part of the dev cycle/
 
-### Commands of Note
+## Commands of Note
 ```
 git diff
 git diff --staged
@@ -42,9 +44,9 @@ git log --stat
 git log --shortstat --oneline
 ```
 
-###  Expressing my Skillselves
+##  Expressing my Skillselves
 
-![](Screen%20Shot%202021-03-23%20at%202.02.56%20PM.png)
+![](./Screen%20Shot%202021-03-23%20at%202.02.56%20PM.png)
 _After doing multiple commits, it would seem that doing something unconventional like adding the execute bit to a text file and adding script code should support and inform the commit history._
 
 ☝️Using `git rebase -i HEAD~N`  (where N is positional number), I was able to tag the errant line with the `reword` command and change the message in an interactive session. Nice!
