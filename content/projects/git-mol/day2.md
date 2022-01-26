@@ -22,7 +22,7 @@ Here’s where I diverged from the lesson plan and treated my _README_ file like
 
 Making small edits and several commits, I was able to see the circumstances like:
  
-![Diagram of a git flow](/git-mol/day2-02.png "The dev cycle: Working area, Staging area , Commit history")
+{{< figure src="./day2-02.png" caption="The dev cycle: Working area, Staging area , Commit history" numbered="false" >}}
 
 From right to left, I have:
 
@@ -30,7 +30,7 @@ From right to left, I have:
 2. I have made edits to same file and added it (then I enhanced the file-as-script and added, but not committed, the change)
 3. I have made more edits to the file (finally, I removed the single variable echo as I have done more work on the file-as-script)
 
-![Diagram of a git status](/git-mol/day2-03.png "`git diff` or `git diff —staged` can show the facet of the dev cycle")
+{{< figure src="day2-03.png" caption="`git diff` or `git diff —staged` can show the facet of the dev cycle" numbered="false" >}}
 
 ## Commands of Note
 ```
