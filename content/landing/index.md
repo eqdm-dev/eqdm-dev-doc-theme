@@ -1,9 +1,9 @@
 ---
 # This file represents a page section.
-headless: true
+# headless: true
 
 # Order that this section appears on the page.
-weight: 1
+# weight: 1
 
 title: "Landing Page"  # Add a page title.
 summary: "Hello!"  # Add a page description.
