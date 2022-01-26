@@ -15,7 +15,10 @@ design:
     gradient_angle: 0
     gradient_start: 'rgba(224,223,255,1)'
     gradient_end: 'rgba(153,238,255,1)'
-    text_color_light: false
+    image_size: cover
+  spacing:
+      # Customize the section spacing. Order is top, right, bottom, left.
+      padding: ["15px", "0", "10px", "0"]
 hero_media: unatomic.svg
 ---
 
