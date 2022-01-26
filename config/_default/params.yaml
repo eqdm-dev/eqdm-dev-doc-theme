@@ -39,7 +39,7 @@ address_format: en-us
 
 highlight: false
 math: false
-diagram: true
+diagram: false
 privacy_pack: false
 edit_page:
   repo_url: ''
