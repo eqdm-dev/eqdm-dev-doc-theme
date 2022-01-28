@@ -12,15 +12,15 @@ These commits are incremental and ultimately _building something_. As time passe
 
 ## Commands in Play
 ```
-git log —parents
+git log --parents
 git log --parents --abbrev-commit
 git log --oneline
-git log —patch
-git log —stat
-git log —patch-with-stat
+git log —-patch
+git log —-stat
+git log —-patch-with-stat
 git help commit # then `/DISCUSSION` to skip ahead to the value of extended commit messages
 git rev-parse HEAD # `git rev-parse` translates branch names to their corresponding SHA1 IDs
-git rev-parse master
+git rev-parse main
 git checkout _short-SHA1-fragment_ # Go back to that version, results in "detached" HEAD!
 ```
 
@@ -37,7 +37,7 @@ git show main@{3}
 git show main^^^
 git rev-parse :/"$some-commit-string"
 ```
-{{< figure src="day4-01.png" caption="Display of the relationships via the SHA1 fragments between commits in `git log —parents —abbrev-commit`" numbered="false" >}}
+{{< figure src="day4-01.png" caption="Display of the relationships via the SHA1 fragments between commits in `git log --parents --abbrev-commit`." numbered="false" >}}
 
 {{< figure src="day4-02.png" caption="GITK tool launched via CLI. Commit history, SHA1 IDs, and DIFF shown as a graph in a GUI." numbered="false" >}}
 
@@ -45,7 +45,7 @@ git rev-parse :/"$some-commit-string"
 
 ## Test Your Knowledge
 Q. How can you list the history from the first commit to the last?
-What do you think is faster for Git to generate: the default listing or a reverse listing?
+<!--What do you think is faster for Git to generate: the default listing or a reverse listing?-->
 {{< figure src="day4-04.png" caption="This is a compact and full history of that weeks’ activity on the git-mol-buildtools repo." numbered="false" >}}
 
 Q. Is there a way to list just the most recent _N_ commits? (Where _N_ can be any number?) How?  
@@ -59,16 +59,35 @@ A: It is like `git —pretty=oneline --abbrev-commit` used together. [Refer to g
 
 ## 8.5.3 Test Your Knowledge → Using other names
 Q. What commits do each of these commands point to?  
-A: `git rev-parse HEAD` points to the child SHA1 ID of main.
+
+| Git Command          | Returns                                  |
+| -------------------- | ---------------------------------------- |
+| `git rev-parse HEAD` | b34cc05c5e558a9ab0df939ec51ee607a80bb53f |
+| `git rev-parse main` | b34cc05c5e558a9ab0df939ec51ee607a80bb53f |
+
+A1: `git rev-parse HEAD` points to the SHA1 ID of main.  
+
+| Git Command            | Return                                                     |
+| ---------------------- | ---------------------------------------------------------- |
+| `git rev-parse main~3` | fbae4301505809053a5eb2659a5fc2f8cb5c8e61                   |
+| `git show main@{3}`    | commit fbae4301505809053a5eb2659a5fc2f8cb5c8e61 \n Author… |
+| `git show main^^^`     | commit fbae4301505809053a5eb2659a5fc2f8cb5c8e61 \n Author… |
+
+A2: `git rev-parse main~3` points to the third historical commit below HEAD -> main. `git show main@{3}` returns the metadata from the commit and a `diff --get`. `git show main^^^` does the exact same as the former command. 
 
 Q. What did the last git rev-parse search to find its commit?  
-A: It searched commit messages.
+
+| Git Command                   | Return                                   |
+| ----------------------------- | ---------------------------------------- |
+| `git rev-parse :/"subtract" ` | fbae43d15d58b9053a5eb2659a5fc2f8cb5c8e61 |
+
+A: It searched commit messages and returned the SHA1 ID.
 
 Q. Does git rev-parse work on tag names?  
 A: `git rev-parse $your-tagname` did not appear to work.
 
 Q. Do these symbols (~3, @{3}, and so forth) work on tag names?  
-A: `git show $your-tagname^` took me to the SHA1 ID commit for that tag.
+A: `git show $your-tagname^` took me to the SHA1 ID for that tag.
 
 
 ## More Resources
