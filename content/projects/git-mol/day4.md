@@ -39,7 +39,7 @@ git rev-parse :/"$some-commit-string"
 ```
 {{< figure src="day4-01.png" caption="Display of the relationships via the SHA1 fragments between commits in `git log —parents —abbrev-commit`" numbered="false" >}}
 
-{{< figure src="day4-02.png" caption="GITK tool launched via CLI. Commit history, SHA1 IDs, and DIFF shown as a graph in a GUI" numbered="false" >}}
+{{< figure src="day4-02.png" caption="GITK tool launched via CLI. Commit history, SHA1 IDs, and DIFF shown as a graph in a GUI." numbered="false" >}}
 
 {{< figure src="day4-03.png" caption="Although the Working area no longer contains a file named 'bad_calculator.py’, the instances of it in the commit history can be displayed to the person browsing the repo." numbered="false" >}}
 
@@ -57,7 +57,7 @@ A: Git log can take the time-limiting options such as `—since` and `—until `
 Q. I’m a big fan of `git —oneline`, but it’s a shortcut. What is it a shortcut for?  
 A: It is like `git —pretty=oneline --abbrev-commit` used together. [Refer to git-scm doc](https://www.git-scm.com/docs/git-log).
 
-## 8.5.3 Test Your Knowledge -> Using other names
+## 8.5.3 Test Your Knowledge → Using other names
 Q. What commits do each of these commands point to?  
 A: `git rev-parse HEAD` points to the child SHA1 ID of main.
 
@@ -67,10 +67,10 @@ A: It searched commit messages.
 Q. Does git rev-parse work on tag names?  
 A: `git rev-parse $your-tagname` did not appear to work.
 
-Q.  Do these symbols (~3, @{3}, and so forth) work on tag names?  
+Q. Do these symbols (~3, @{3}, and so forth) work on tag names?  
 A: `git show $your-tagname^` took me to the SHA1 ID commit for that tag.
 
-## More Resources
-[SHA1 IDs and computing collisions](http://marc.info/?l=git&m=111365428717118&w=2)
-[Subtlety of origin\HEAD in a clone](https://stackoverflow.com/questions/4359099/git-branch-named-origin-head-origin-master)
 
+## More Resources
+[SHA1 IDs and computing collisions](http://marc.info/?l=git&m=111365428717118&w=2)  
+[Subtlety of origin\HEAD in a clone](https://stackoverflow.com/questions/4359099/git-branch-named-origin-head-origin-master)  
