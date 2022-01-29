@@ -20,17 +20,17 @@ Create some artifact for git:
 
 Here’s where I diverged from the lesson plan and treated my _README_ file like it was a bash script.
 
-Making small edits and several commits, I was able to see the circumstances like:
+Making small edits and several commits, I was able to see the circumstance I created:
  
 {{< figure src="day2-02.png" caption="The dev cycle: Working area, Staging area , Commit history" numbered="false" >}}
 
 From right to left, I have:
 
-1. Created my README file, added, and committed it (in this case, I had previously marked the file executable, and added a variable to the file with echo of the same variables value)
-2. I have made edits to same file and added it (then I enhanced the file-as-script and added, but not committed, the change)
-3. I have made more edits to the file (finally, I removed the single variable echo as I have done more work on the file-as-script)
+1. The two commits of my _README.md_ file that has only a single dummy message in the file.
+2. I started following the __buildtools.sh__ path in Chapter 4. Editing the file to show my intent.
+3. I have made more edits to the file creating the basis for it to behave as a script.
 
-{{< figure src="day2-03.png" caption="`git diff` or `git diff —staged` can show the facet of the dev cycle" numbered="false" >}}
+{{< figure src="day2-03.png" caption="`git diff` or `git diff —staged` can show the facets of the add/commit cycle" numbered="false" >}}
 
 ## Commands of Note
 ```

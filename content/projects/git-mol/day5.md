@@ -19,9 +19,8 @@ Furthermore, branch names aren't prescribed by git. You are free to elect whatev
 * git branch [-d] [branch-name] 
 * git branch [-v]
 * git checkout [checkout-name]
-	* git checkout [-b] another-branch another-typo -> Example: create branch and switch to it in one step  
-{{< figure src="day5-01.png" caption="Diagram of git checkout (branch)." numbered="false" >}}
-	* ‼️ This is also the command to restore a deleted branch by substituting DEL_BRANCH_SHA1ID for 'Start point'
+	* [git checkout -b createbranch startingpoint](https://explainshell.com/explain?cmd=git+checkout+-b+createbranch+startpoint) -> Example: Using flags and options to create branch, starting from another branch, and switch to it in one step!
+	* ‼️ This is also the command to restore a deleted branch by substituting DEL_BRANCH_SHA1ID for 'startingpoint'.
 * git log --oneline
 * git log --graph --decorate --pretty=oneline --all --abbrev-commit
 	* git config —global alias.lol "log --graph --decorate
