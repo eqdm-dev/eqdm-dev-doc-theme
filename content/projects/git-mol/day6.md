@@ -23,7 +23,7 @@ Typically **main** is the branch designated to accept all merges, but YMMV. A me
 
 > The output from `git diff main...bugfix` shows the difference between branches relative to when they became different. It’s a preview of what merge will do. The order is _significant_ for it: "main" is listed first and appears on top (“the highway”), bugfix is listed second (“the on-ramp”).
 
-{{< figure src="day6-01.png" caption="Elementary fix, dear Watson. Don’t divide by zero in bash script ‘baz’." numbered="false" >}}
+{{< figure src="day6-01.png" caption="Elementary fix, dear Watson. Don’t divide by zero in bash script 'baz'." numbered="false" >}}
 
 > This command is overkill,in the example, but it demonstrates that bash script ‘baz’ (from bugfix) will be merged into main by the identifying glyph ‘M’. For large repositories, this command gives a useful summary of the actions that will be performed on `merge`.
 
@@ -51,7 +51,7 @@ _Short\Easy mode:_ If you are mid-merge and in a moment of realization that you 
 Chap 16 covers revert, or to take back, a merge.
 
 ## 10.4 Performing fast-forward merges
-_Definition:_ The fast-forward merge takes effect when the target branch is a descendant of the branch that it will merge with.
+_Definition:_ The [fast-forward merge](https://www.google.com/search?q=git+diagram+fast-forward&tbm=isch&ved=2ahUKEwi8zYD83971AhVNYDUKHZIcC6wQ2-cCegQIABAA&oq=git+diagram+fast-forward&gs_lcp=CgNpbWcQAzoFCAAQgAQ6BAgAEB46BggAEAgQHjoECAAQGFCxGVilImDsI2gAcAB4AIABO4gB2QOSAQE5mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=TUj5YfzyHM3A1QGSuazgCg) takes effect when the target branch is a descendant of the branch that it will merge with.
 /Once Git detects that the branch being merged is a direct descendent of the current branch, it moves the local branch up on the remote branch–a fast forward to `main`!/
 
 ## 10.6.2 Changing how conflicts are displayed (merge.conflictstyle)
