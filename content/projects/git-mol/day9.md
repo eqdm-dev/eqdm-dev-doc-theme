@@ -26,10 +26,7 @@ weight: 9
 
 {{< figure src="day9-01.png" caption="The action of ‘push’ to a remote is a summary of all the compression and comparison of objects processed by git. The change of the SHA1-IDs is a very important bit of info. The SHA1-IDs are added to the local and the remote, too." numbered="false" >}}
 
-{{< figure src="day9-02.png" caption="I have deleted the ’new_branch’ at math.carol and a reference still exists to math.git, with a special switch `:new_branch` the reference can be removed." numbered="false" >}}
-
-![](Git%20in%20a%20Month%20of%20Lunches%20-%20day%209/Screen%20Shot%202021-04-09%20at%205.20.31%20PM.png)
-_Remote branch has been removed from the POV of math.carol_
+{{< figure src="day9-02.png" caption="I have deleted the 'new_branch' at math.carol and a reference still exists to math.git, with a special switch `:new_branch` the reference can be removed." numbered="false" >}}
 
 ## Resources
 [Git-SCM docs–git push](https://git-scm.com/docs/git-push)
