@@ -19,7 +19,7 @@ weight: 10
 
 It’s all about `git pull`, which is compromised by two commands: `git fetch` and `git merge`
 
-{{< figure src="day10-01.png" caption="A snapshot looking at the math.git repo at owner "Carol". Another dev has pushed a change to math.git so that Carol's local is out of date." numbered="false" >}}
+{{< figure src="day10-01.png" caption="A snapshot looking at the math.git repo at owner 'Carol'. Another dev has pushed a change to math.git so that Carol's local is out of date." numbered="false" >}}
 
 * The merge is the more substantial operation. It’s much more complicated than `git push`. When changes can be cleanly merged, `git pull` is just the mirror operation of `git push`. Anything more complicated, and you have to make the merge in a local repository and then push the result.
 * Consider this sentence from the `git pull` help page: "In its default mode, `git pull` is shorthand for `git fetch` followed by `git merge FETCH_HEAD`."
@@ -27,7 +27,7 @@ It’s all about `git pull`, which is compromised by two commands: `git fetch` a
 	* When the references arrive at the local repo, they are laid down on top of it, along with any files that they point to.
 	* These references are tracked by using remote-tracking branches.
 
-{{< figure src="day10-02.png" caption="A snapshot looking at the math.git repo at owner “Carol”. The command flag `--decorate` provides a list of the SHA1 IDs and the **references** (shown in parentheses, like this 😉). Remote references are prepended with `origin/`. The label HEAD is your git playback machine, and it is always pointing to your current branch." numbered="false" >}}
+{{< figure src="day10-02.png" caption="A snapshot looking at the math.git repo at owner 'Carol'. The command flag `--decorate` provides a list of the SHA1 IDs and the **references** (shown in parentheses, like this 😉). Remote references are prepended with `origin/`. The label HEAD is your git playback machine, and it is always pointing to your current branch." numbered="false" >}}
 
 NB. The state of Carol’s repo ☝️ is _after_ the `git pull` from the main branch `math.git`. See how the SHA1 ID `080a405` is now the HEAD and it has a reference to `origin/`. This was a "clean merge" of the repos and the complexity was wrapped by that `git pull`.
 
@@ -37,7 +37,7 @@ NB. The state of Carol’s repo ☝️ is _after_ the `git pull` from the main b
 
 ### git fetch > git pull 
 
-{{< figure src="day10-05.png" caption="In the terminal from Carol's repo, we done a `git fetch`.  The remote-tracking branch (SHA1 ID: 6fead5c) is ahead of the local HEAD (SHA1 ID: 08a405)." numbered="false" >}}
+{{< figure src="day10-05.png" caption="In the terminal from Carol's repo, we done a `git fetch`. The remote-tracking branch (SHA1 ID: 6fead5c) is ahead of the local HEAD (SHA1 ID: 08a405)." numbered="false" >}}
 
 So to consider the actions of `git pull` at a step-wise basis, access the remote master branch in Carol's repo via: `git rev-parse origin.main`.
 
