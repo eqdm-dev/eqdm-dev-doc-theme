@@ -1,4 +1,3 @@
-# Git in a Month of Lunches - day 10
 ---
 title: Day 10
 linktitle: Day 10
