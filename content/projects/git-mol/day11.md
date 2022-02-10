@@ -13,37 +13,28 @@ weight: 11
 * git log
 	* git log --parents -> Show the merging of branches
 	* git log --parents --oneline
-	
-{{< figure src="day11-01.png" caption="">}}
-
 	* git --no-pager log <SHA1 ID fragment> -n 1 -> Select the merge commit entry, without pagination
 	* git log --merges -> See only commits with merges in them
 	* git log --oneline <repo-filename> <repo-filename>
-
-{{< figure src="day11-02.png" caption="">}}
-
 	* git log --since 04/10/2021 --until 04/20/2021
 	* git log --author=“<authorname | gmail.com>”
 	* git log --stat HEAD^..HEAD -> Display the # of files that have changes between the most current (`HEAD`) commit and its immediate predecessor (`HEAD^`)
 	* git log --patch -> Show the contents that have changed
+```
+	$ git log --patch 9b6dd3^..9b6dd3
+	commit 9b6dd3e7ac029ff9df376d9a0950794d3a735be9 (HEAD -> main, tag: four_files_galore)
+	Author: Sean Flaherty <sean@seanflaherty.com>
+	Date:   Tue Apr 20 17:41:56 2021 -0400
 
-{{< figure src="day11-03.png" caption="">}}
-
+	    Adding four empty files.
+```
+> NB. The use of the caret before the SHA1 ID indicates that you want tto display what changed between the most current commit (HEAD) and its closest predecessor (HEAD^).
 * git shortlog -> Show just the short (<=50 char) commit message
 	* git shortlog -e -> just the author list with email address
 * git name-rev
 * git grep
 * git show
 * git blame
-
-{{< figure src="day11-04.png" caption="Output from `git log --patch ef47d3f^..ef47d3f`." >}}
-
-* The use of the caret before the SHA1 ID indicates that you want the version immediately before it.
-* The listing shows four files were added.
-* Git uses two indicators to show that this is a new file by:
-	* Setting new file mode
-	* Setting index 0000000, meaning a previous version of the files doesn’t exist
-* You can limit the output by appending `— a` or `— a b` to the command  
 
 {{< figure src="day11-05.png" caption="Output from `git log --graph --decorate --oneline branch_03` restricts the outlet from BASH script make_lots_of_branches.sh to a particular tag." >}}
 
